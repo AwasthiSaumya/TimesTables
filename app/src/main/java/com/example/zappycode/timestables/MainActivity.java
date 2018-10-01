@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public void generateTimesTable(int timesTableNumber) {
         ArrayList<String> timesTableContent = new ArrayList<String>();
 
-        for (int j = 1; j <= 100; j++) {
+        for (int j = 1; j <= 10; j++) {
             timesTableContent.add(Integer.toString(j * timesTableNumber));
         }
 
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         final SeekBar timesTablesSeekBar = findViewById(R.id.timesTablesSeekBar);
         timesTablesListView = findViewById(R.id.timesTablesListView);
 
-        int max = 20;
+        int max = 30;
         int startingPosition = 10;
 
         timesTablesSeekBar.setMax(max);
